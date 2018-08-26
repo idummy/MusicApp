@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_row_look"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        android:ellipsize="end"
+        android:gravity=""
+        android:singleLine="true"
+        android:text="title" />
+
+    <RelativeLayout
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/album"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/separator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/album"
+            android:text="|" />
+
+        <TextView
+            android:id="@+id/artist"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/separator"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="" />
+    </RelativeLayout>
+</LinearLayout>
+
+
+
+
